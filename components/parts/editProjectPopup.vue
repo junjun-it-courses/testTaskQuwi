@@ -50,7 +50,6 @@
 
         mounted() {
           this.validErr = defaultErrMes;
-          console.log(this.data)
         },
 
       watch: {

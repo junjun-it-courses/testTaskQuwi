@@ -22,7 +22,6 @@ export default {
   async asyncData({store}) {
     await store.dispatch('projects/getProjectsList');
     const projects = await store.getters['projects/getProjectsList'];
-    console.log(projects);
     return {
       projects,
     }

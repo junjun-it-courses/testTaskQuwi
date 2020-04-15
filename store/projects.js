@@ -21,7 +21,6 @@ export const actions = {
     try {
       await this.$axios.setToken(this.$cookies.get('token'), 'Bearer');
       const data = this.$axios.$post('projects-manage/update?id='+id, {name});
-      console.log(data);
       return true;
     } catch (e) {
       return false;
